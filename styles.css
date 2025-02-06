@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.main {
+  background-image: url("assets/images/bg.jpeg");
+  height: 644px;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  /* width: 100vw; */
+}
+
+.main .box {
+  height: 644px;
+  width: 100%;
+  opacity: 0.69;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  height: 100px;
+  max-width: 70vw;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 300px; */
+}
+
+nav img {
+  width: 150px;
+  height: 3.5rem;
+  position: relative;
+  z-index: 10;
+  /* margin: 10px; */
+}
+
+.btn {
+  border-radius: 4px;
+  color: white;
+  font-family: "Martel Sans", serif;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.btn-red {
+  background-color: red;
+  border: 1px solid red;
+}
+
+.btn-red-sm {
+  background-color: red;
+  border: 1px solid red;
+}
+
+.language img {
+  height: 16px;
+  width: 16px;
+}
+
+/* .language img.language-icon{
+  padding: 6px 2px 6px 18px;
+}
+
+.language img.down{
+  padding: 6px 18px 6px 2px;
+} */
+
+button.language {
+  border: 1px solid gray;
+  background: transparent;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 6px 30px 6px 30px;
+  margin-right: 7px;
+  /* display: flex; */
+}
+
+button.sign-in {
+  font-weight: 500;
+  line-height: 14px;
+  font-size: 14px;
+  /* padding: 4px 16px; */
+}
+
+.main .main-content {
+  font-family: "Martel Sans", serif;
+  height: calc(100% - 100px);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.main-content > :nth-child(1) {
+  width: 40vw;
+  font-size: 56px;
+  line-height: 70px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.main-content > :nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.main-content > :nth-child(3) {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.get-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.get-info > :nth-child(1) {
+  border: 1px solid rgba(246, 238, 238, 0.5);
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  /* transparent bg */
+  color: white;
+  width: 250px;
+  padding: 10px 100px 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  /* outline-offset: 2px;
+  outline: 2px solid white; */
+}
+
+.get-info > :nth-child(2) {
+  padding: 14px 10px 6px 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.separation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+  position: relative;
+  z-index: 20;
+  /* height: 11px;
+    background-color: gray; */
+}
+
+.headings {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h2.trending {
+  position: relative;
+  top: 50px;
+  left: 150px;
+}
+
+.trending-section {
+  position: relative;
+  top: 80px;
+}
+
+.trending-items-container ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* .trending-items-container li{
+  height: 300px;
+  width: 100px;
+} */
+
+.trending-items-container li span {
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0.1rem rgb(255, 255, 255);
+  font-size: 4rem;
+  font-weight: 800;
+  position: absolute;
+  bottom: 0.1rem;
+  left: -0.625rem;
+}
+
+.trending-items-container button {
+  border-color: transparent;
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: black;
+  cursor: pointer;
+}
+
+.trending-items-container img {
+  border-radius: 0.5rem;
+  height: 250px;
+  width: 182px;
+}
+
+/* .reason{
+  position: relative;
+} */
+
+h2.reason-heading {
+  z-index: 10;
+  position: relative;
+  top: 140px;
+  left: 150px;
+}
+
+.reason-items-container {
+  width: 83vw;
+  margin: auto;
+  position: relative;
+  top: 150px;
+}
+
+.reason-items-container ul {
+  display: flex;
+}
+
+.reason-item {
+  height: calc(85vw / 4);
+  width: calc(82vw / 4);
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+
+  margin: 10px;
+  border-radius: 1.8rem;
+}
+
+.reason-item div img {
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+
+.reason-item div {
+  padding: 12px 8px;
+}
+
+.reason-item-heading {
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.reason-item-content {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.faq-heading {
+  position: relative;
+  top: 200px;
+  left: 150px;
+  margin-bottom: 15px;
+}
+
+.faq-section {
+  position: relative;
+  top: 200px;
+}
+
+.faq-section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+.faq-section h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+}
+/* .faq-section li{
+background-color: rgb(45, 45, 45);
+color: white;
+} */
+
+.faq-section button {
+  border: 1px solid rgb(45, 45, 45);
+  background-color: rgb(45, 45, 45);
+  display: flex;
+  width: 82vw;
+  height: 80px;
+  justify-content: space-between;
+  padding: 20px;
+  cursor:pointer
+}
+
+.faq-section button:hover {
+  border: 1px solid rgb(70, 70, 70);
+  background-color: rgb(70, 70, 70);
+}
+
+.faq-section span {
+  background-color: transparent;
+  color: white;
+  font-size: 50px;
+  font-weight: 200;
+  position: relative;
+  bottom: 14px;
+  /* height: 28px; */
+}
+
+
+.footer-signup{
+  color: white;
+  position: relative;
+  top: 280px;
+  width: 85vw;
+  text-align: center;
+  margin: auto;
+}
+
+.footer-signup .get-info{
+  margin: 20px;
+}
+
+.footer-signup .get-info > :nth-child(1){
+width: 400px;
+}
+
+footer{
+  position: relative;
+  top: 300px;
+  left:150px;
+  color:rgba(255, 255, 255, 0.7);
+}
+
+footer > p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-content{ 
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  display: grid;
+  grid-template-columns: repeat(4,330px);
+  grid-template-rows: repeat(4,30px);
+  padding: 40px 0;
+}
+
+footer > :last-child{
+  padding: 40px 0 100px 0;
+  font-weight: 400;
+  font-size: 14px;
+}
